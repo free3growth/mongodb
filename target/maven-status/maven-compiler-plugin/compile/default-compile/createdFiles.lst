@@ -1,0 +1,5 @@
+com\touchair\article\ArticleMain.class
+com\touchair\article\service\CommentService.class
+com\touchair\article\po\Comment.class
+com\touchair\article\service\impl\CommentServiceImpl.class
+com\touchair\article\dao\CommentRepository.class

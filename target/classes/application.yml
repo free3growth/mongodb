@@ -1,0 +1,16 @@
+server:
+  port: 7777
+
+
+spring:
+#数据源配置
+  data:
+    mongodb:
+      # 主机地址
+      host: 192.168.83.133
+      # 默认端口是27017
+      port: 27017
+      # 数据库
+      database: test
+      #也可以使用uri连接
+#      uri: mongodb://192.168.83.133:27017/test
