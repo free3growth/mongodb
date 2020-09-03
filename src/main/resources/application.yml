@@ -11,6 +11,18 @@ spring:
       # 默认端口是27017
       port: 27017
       # 数据库
-      database: test
-      #也可以使用uri连接
-#      uri: mongodb://192.168.83.133:27017/test
+      database: articledb
+      #用户名
+      # username: bobo
+      #密码
+      # password: 123456
+    # 副本集的连接字符串
+      #uri: mongodb://192.168.83.133:27017,192.168.83.133:27018,192.168.83.133:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+    #连接路由字符串
+      #uri: mongodb://192.168.83.133:27017,192.168.83.133:27117/articledb
+      #单机有认证的情况下，也使用字符串连接
+      #uri: mongodb://bobo:123456@192.168.83.133:27017/articledb
+      #副本集有认证的情况下，字符串连接
+      #uri: mongodb://myroot:123456@192.168.83.133:27017,192.168.83.133:27018,192.168.83.133:2 7019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+      # 分片集群有认证的情况下，字符串连接
+      #uri: mongodb://myroot:123456@192.168.83.133:27017,192.168.83.133:27117/articledb

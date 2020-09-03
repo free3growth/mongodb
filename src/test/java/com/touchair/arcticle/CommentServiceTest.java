@@ -51,7 +51,7 @@ public class CommentServiceTest {
     public void testSaveComment(){
         Comment comment=new Comment();
         comment.setArticleid("100012");
-        comment.setContent("带父级的测试数据3");
+        comment.setContent("带父级的测试数据4");
         comment.setCreatedatetime(LocalDateTime.now());
         comment.setUserid("10012");
         comment.setNickname("mongodb parentid test");
